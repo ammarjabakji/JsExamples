@@ -65,10 +65,13 @@ const companies = [
 ];
 
 // Map through company Name and Company category
-const companyNames = companies.map(
-  company => `
-     <h2> Company Name: ${company.name} </h2>
-     <h3> Company Category:${company.category}</h3>
-     `
-);
+const output = company => `
+<h2> Company Name: ${company.name} </h2>
+<h3> Company Category:${company.category}</h3>
+`;
+
+const companyNames = companies
+  .filter(company => company.category === "Retail")
+  .map(output);
+
 document.body.innerHTML = companyNames;

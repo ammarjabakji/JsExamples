@@ -68,7 +68,7 @@ const companies = [
 ```
 
 # Task Name
-## Map through the data to display company Name and Company category
+## Filter and map retail companies
 
 
 
