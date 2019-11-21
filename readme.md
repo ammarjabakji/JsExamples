@@ -68,7 +68,7 @@ const companies = [
 ```
 
 # Task Name
-## Get companies ended before 2000
+## Get companies that lasted more than 10 years 
 
 
 

@@ -71,12 +71,13 @@ const output = company => `
   <li> Company Category:${company.category} </li> 
   <li> Start Date:${company.start} </li>
   <li> End Date:${company.end} </li>
+  <li> Lasted:${company.end - company.start} years </li>
   <li> Number of Employees :${company.empNumber} </li>
 </ul>
 `;
 
 const companyNames = companies
-  .filter(company => company.end < 2000)
+  .filter(company => company.end - company.start >= 10)
   .map(output)
   .join("");
 
