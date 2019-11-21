@@ -68,7 +68,7 @@ const companies = [
 ```
 
 # Task Name
-## Filter data by retail companies
+## Get companies ended before 2000
 
 
 

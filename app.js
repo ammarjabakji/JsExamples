@@ -76,7 +76,7 @@ const output = company => `
 `;
 
 const companyNames = companies
-  .filter(company => company.category === "Retail")
+  .filter(company => company.end < 2000)
   .map(output)
   .join("");
 
