@@ -64,21 +64,8 @@ const companies = [
   }
 ];
 
-const output = company => `
-<h2> Company Name: ${company.name} </h2>
-<ul> 
-  <li> Company Category:${company.category} </li> 
-  <li> Start Date:${company.start} </li>
-  <li> End Date:${company.end} </li>
-  <li> Lasted:${company.end - company.start} years </li>
-  <li> Number of Employees :${company.empNumber} </li>
-</ul>
-`;
+empNumbers = companies.reduce((acc, company) => acc + company.empNumber, 0);
 
-const dataManipulation = companies
-  .slice()
-  .sort((a, b) => (a.start < b.start ? 1 : -1))
-  .map(output)
-  .join("");
+const dataManipulation = empNumbers;
 
-document.body.innerHTML = dataManipulation;
+document.body.innerHTML = `<h1>Total number of employees : ${dataManipulation} </h1>`;
