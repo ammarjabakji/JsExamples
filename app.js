@@ -64,7 +64,6 @@ const companies = [
   }
 ];
 
-// Map through company Name and Company category
 const output = company => `
 <h2> Company Name: ${company.name} </h2>
 <ul> 
@@ -78,7 +77,7 @@ const output = company => `
 
 const dataManipulation = companies
   .slice()
-  .reverse()
+  .sort((a, b) => (a.start > b.start ? 1 : -1))
   .map(output)
   .join("");
 

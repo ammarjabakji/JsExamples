@@ -68,7 +68,7 @@ const companies = [
 ```
 
 # Task Name
-## Display the data reversely without mutating the original data
+## Sort companies by start year without mutating the original data
 
 
 
