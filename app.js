@@ -64,7 +64,6 @@ const companies = [
   }
 ];
 
-// Map through company Name and Company category
 const output = company => `
 <h2> Company Name: ${company.name} </h2>
 <ul> 
