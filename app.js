@@ -77,7 +77,8 @@ const output = company => `
 `;
 
 const dataManipulation = companies
-  .slice(-5)
+  .slice()
+  .reverse()
   .map(output)
   .join("");
 
