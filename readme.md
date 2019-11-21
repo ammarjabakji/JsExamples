@@ -67,8 +67,8 @@ const companies = [
 ];
 ```
 
-## Task one 
-1. Map through the data to display company Name and Company category
+# Task Name
+## Map through the data to display company Name and Company category
 
 
 
