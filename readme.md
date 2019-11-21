@@ -68,7 +68,7 @@ const companies = [
 ```
 
 # Task Name
-## Sort companies by start year without mutating the original data
+## Sort companies by start year from newest to oldest without mutating the original data
 
 
 

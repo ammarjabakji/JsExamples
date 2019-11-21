@@ -77,7 +77,7 @@ const output = company => `
 
 const dataManipulation = companies
   .slice()
-  .sort((a, b) => (a.start > b.start ? 1 : -1))
+  .sort((a, b) => (a.start < b.start ? 1 : -1))
   .map(output)
   .join("");
 
