@@ -76,9 +76,9 @@ const output = company => `
 </ul>
 `;
 
-const companyNames = companies
-  .filter(company => company.end - company.start >= 10)
+const dataManipulation = companies
+  .slice(0, 5)
   .map(output)
   .join("");
 
-document.body.innerHTML = companyNames;
+document.body.innerHTML = dataManipulation;
