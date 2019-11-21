@@ -68,7 +68,7 @@ const companies = [
 ```
 
 # Task Name
-## Get the first five companies 
+## Get the last five companies 
 
 
 
